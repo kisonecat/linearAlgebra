@@ -1,62 +1,12 @@
-\documentclass[11pt,notitlepage]{article}
-\usepackage{amsmath, amsthm, amssymb,todonotes, enumerate,color,pigpen,mathtools}
-\usepackage{graphicx}%authblk
-\usepackage[v2]{xy}
-\xyoption{all}
-\topmargin  = -1cm
-\textwidth  = 16cm \textheight = 24cm
-\voffset-.75cm\hoffset=-1.7cm
-\parindent  = 0pt
-\pdfpageheight 11in
-\pagestyle{empty}
-%\flushbottom
-%\renewcommand\Authfont{\scshape}
-%\renewcommand\Affilfont{\small}
-
-\numberwithin{equation}{section}
-
-\theoremstyle{plain}
-\newtheorem{theorem}[equation]{Theorem}
-\newtheorem*{thm}{Theorem}
-\newtheorem{proposition}[equation]{Proposition}
-\newtheorem{lemma}[equation]{Lemma}
-\newtheorem{corollary}[equation]{Corollary}
-\newtheorem{conjecture}[equation]{Conjecture}
-
-\theoremstyle{definition}
-\newtheorem{definition}[equation]{Definition}
-\newtheorem{example}[equation]{Example}
-\newtheorem{exercise}[equation]{Exercise}
-\newtheorem{remark}[equation]{Remark}
-\newtheorem{observation}[equation]{Observation}
-\newtheorem{question}[equation]{Question}
-\newtheorem*{ques}{Question}
-\newtheorem{construction}[equation]{Construction}
-\newtheorem{claim}[equation]{Claim}
-
-
-\newcommand\wt{\widetilde}
-\newcommand\ov{\overline}
-\newcommand\inj{\rightarrowtail}
-\newcommand\surj{\twoheadrightarrow}
-\newcommand{\harpoon}{\overset{\rightharpoonup}}
-
-\newenvironment{amatrix}[1]{%
-  \left[\begin{array}{@{}*{#1}{c}|c@{}}
-}{%
-  \end{array}\right]
-}
+\documentclass[handout]{ximera}
+\input{../preamble}
+\title{Matrices}
 
 \begin{document}
-
-
-\title{Linear Algebra - Topic 2}
-\author{}
+\begin{abstract}
+  Linear algebra is the study of linear functions.
+\end{abstract}
 \maketitle
-\vskip.3in
-
-
-\section{Matrices}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -426,12 +376,12 @@ A*({\bf x}_h + {\bf x}) = A*{\bf x}_h + A*{\bf x} = {\bf 0} + {\bf b} = {\bf b}
 \]
 so ${\bf x}_h + {\bf x}$ is again a solution to the original equation. Thus
 
-\begin{thm} (Superposition Principle) Suppose $A*{\bf x} = {\bf b}$ is a consistent matrix equation, with ${\bf x}_p$ a particular solution to the equation. Then the set of solutions to the original equation can be expressed as
+\begin{theorem} (Superposition Principle) Suppose $A*{\bf x} = {\bf b}$ is a consistent matrix equation, with ${\bf x}_p$ a particular solution to the equation. Then the set of solutions to the original equation can be expressed as
 \[
 \{{\bf x}_h + {\bf x}_p\ |\ {\bf x}_h\in S_0\}
 \]
 where $S_0$ denotes the set of solutions to the associated homogeneous equation.
-\end{thm}
+\end{theorem}
 \vskip.5in
 
 
